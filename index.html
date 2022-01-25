@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body> 
+
+<div class="row z-depth-5" id="title-container">
+   <div class="col l12 center" id="title">
+       <h1>Weather Dashboard</h1>
+   </div> 
+</div>
+
+<div class="row" id="search-box">
+    <form class="col l3">
+        <div> 
+        <p class="search-title">Search for a City: </p>
+        </div>
+        <div>
+        <input type="text" id="user-input" placeholder=" search..."></input>
+        </div>
+        <div>
+        <a class="waves-light btn blue" id="search">Search</a>
+    </div>
+
+    <div id="history">
+        <p>history</p>
+    </div>
+    </form>
+
+    <div id="dynamic-city" class="col l9">
+    <h4>test <span id="main-weather-icon"></span></h4>
+    <p>Temp: <span id="temp-value-now"></span></p>
+    <p>Wind: <span id="wind-speed-now"></span></p>
+    <p>humidity: <span id="humidity-value-now"></span></p>
+    <p>UV Index: <span id="uv-index-now"></span></p>
+    </div>
+
+    <div id="dynamic-weather" class="col l9">
+        <h5>5-Day Forecast:</h5>
+        <div id="weather-container" class="col l12">
+           <div class="cards card-panel blue">
+               <p class="dynamic-date"><span id="date"></span>date</p>
+               <p class="dynamic-icon"><span id="weather-image"></span>image </p>
+               <p>temp: <span id="temp-value"></span></p>
+               <p >humidity: <span id="temp-value"></span></p>
+           </div>
+           <div class="cards card-panel blue">
+                <p class="dynamic-date"><span id="date"></span>date</p>
+                <p class="dynamic-icon"><span id="weather-image"></span>image </p>
+                <p>temp: <span id="temp-value"></span></p>
+                <p >humidity: <span id="temp-value"></span></p>
+            </div>
+           <div class="cards card-panel blue">
+                <p class="dynamic-date"><span id="date"></span>date</p>
+                <p class="dynamic-icon"><span id="weather-image"></span>image </p>
+                <p>temp: <span id="temp-value"></span></p>
+                <p >humidity: <span id="temp-value"></span></p>
+            </div>
+           <div class="cards card-panel blue">
+                <p class="dynamic-date"><span id="date"></span>date</p>
+                <p class="dynamic-icon"><span id="weather-image"></span>image </p>
+                <p>temp: <span id="temp-value"></span></p>
+                <p >humidity: <span id="temp-value"></span></p>
+            </div>
+            <div class="cards card-panel blue">
+                <p class="dynamic-date"><span id="date"></span>date</p>
+                <p class="dynamic-icon"><span id="weather-image"></span>image </p>
+                <p>temp: <span id="temp-value"></span></p>
+                <p >humidity: <span id="temp-value"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
